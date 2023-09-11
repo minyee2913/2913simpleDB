@@ -46,7 +46,7 @@ A database API based on SQlite-sync
     }
     ```
     We support json as `JSON_TEXT`.
-    <br>It is converted to a string when saving and back to json when loading.
+    <br>It is converted to a string when saving and back to json when it loaded.
     ```ts
     class TestTable extends Database.tableClass {
         @Database.field(Database.JSON_TEXT)
