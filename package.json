@@ -1,5 +1,5 @@
 {
-  "name": "@bdsx/plugin",
+  "name": "@bdsx/2913simpledb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,10 +13,17 @@
     "prepare": "tsc || exit 0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.198",
     "@types/node": "^12.20.36",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
-    "eslint": "^8.31.0",
-    "bdsx": "file:../../bdsx"
+    "bdsx": "file:../bdsx",
+    "eslint": "^8.31.0"
+  },
+  "dependencies": {
+    "@types/colors": "^1.2.1",
+    "colors": "^1.4.0",
+    "lodash": "^4.17.21",
+    "sqlite-sync": "^0.3.9"
   }
 }
