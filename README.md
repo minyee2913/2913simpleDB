@@ -99,7 +99,7 @@ A database API based on SQlite-sync
         id: string;
         @Database.field(Database.INTEGER)
     }//table definition
-    
+
     const find = table.get({ id: "testId" }); //find value with id testId
     ```
     When you update values..
@@ -111,6 +111,14 @@ A database API based on SQlite-sync
     //update value with id testId
     table.update(find, { id: "testId" }); //update All fields
     table.update({ value1: find.value1 }, { id: "testId" }); //update particular fields
+    ```
+    If you want to check table has data..
+    ```ts
+    if (table.hasData({ id: "testId" })) {
+        console.log("table has testId!");
+    } else {
+        console.log("table doesn't have testId!");
+    }
     ```
     When you get data from other json file..
     ```ts
